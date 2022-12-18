@@ -1,4 +1,4 @@
-import { COLOR_GUARD, VARIANT_GUARD } from '@/theme';
+import { COLOR_GUARD, VARIANT_GUARD } from 'theme';
 import React, { DOMAttributes } from 'react';
 import { Button, ButtonProps } from 'theme-ui';
 

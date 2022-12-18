@@ -1,4 +1,4 @@
-import { HorizontalGuard, VerticalGuard } from '@/types/common';
+import { HorizontalGuard, VerticalGuard } from 'types/common';
 
 type PostionType = {
     vertical: VerticalGuard;

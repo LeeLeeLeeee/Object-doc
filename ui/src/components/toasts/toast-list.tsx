@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 /** @jsxImportSource theme-ui */
-import { useToastState } from '@/recoils/toast';
+import { useToastState } from 'recoils/toast';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Portal } from '../portal';
 import { LTText } from '../text';

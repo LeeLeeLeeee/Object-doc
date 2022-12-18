@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { SECOND } from '@/const';
-import { ToastGuard, ToastProps, ToastType } from '@/types/common';
+import { SECOND } from 'const';
+import { ToastGuard, ToastProps, ToastType } from 'types/common';
 import { atom, useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
 
 const toastState = atom<ToastProps[]>({

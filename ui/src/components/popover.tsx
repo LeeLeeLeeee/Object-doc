@@ -1,10 +1,10 @@
 /** @jsxImportSource theme-ui */
-import { ExtendChildren } from '@/types/common';
+import { ExtendChildren } from 'types/common';
 import React, { ReactElement, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { HookTargetPositionProps, useTargetPosition } from '@/hooks/hook-target-position';
-import { useOnce } from '@/hooks/hook-once';
-import { useUnmount } from '@/hooks/hook-unmount';
+import { HookTargetPositionProps, useTargetPosition } from 'hooks/hook-target-position';
+import { useOnce } from 'hooks/hook-once';
+import { useUnmount } from 'hooks/hook-unmount';
 import { Portal } from './portal';
 
 interface Props extends ExtendChildren, Partial<Omit<HookTargetPositionProps, 'targetElement'>> {

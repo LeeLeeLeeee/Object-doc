@@ -1,5 +1,5 @@
-import { HorizontalGuard, VerticalGuard } from '@/types/common';
-import { calculateAnchorPosition } from '@/utils/dom';
+import { HorizontalGuard, VerticalGuard } from 'types/common';
+import { calculateAnchorPosition } from 'utils/dom';
 import { MutableRefObject, useEffect, useState } from 'react';
 
 export interface HookTargetPositionProps {

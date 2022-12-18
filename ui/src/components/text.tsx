@@ -1,4 +1,4 @@
-import { COLOR_GUARD, TEXT_GUARD } from '@/theme';
+import { COLOR_GUARD, TEXT_GUARD } from 'theme';
 import React from 'react';
 import { Text, TextProps } from 'theme-ui';
 
@@ -11,5 +11,5 @@ const LTTextForwardRef = React.forwardRef((props: Props, ref: any) => {
     const { $color, $variant = 'md', sx, ...rest } = props;
     return <Text ref={ref} sx={{ color: $color, ...sx }} variant={$variant} {...rest} />;
 });
-
+LTTextForwardRef.displayName = 'LTText';
 export const LTText = React.memo(LTTextForwardRef);

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable no-unused-vars */
-// import { ClearIcon, ErrorIcon } from '@/icons';
+// import { ClearIcon, ErrorIcon } from 'icons';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { ReactElement, useMemo } from 'react';
 import { Input, InputProps, Label } from 'theme-ui';

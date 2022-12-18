@@ -1,5 +1,5 @@
-import { useModalDispatch, useModalState } from '@/recoils/modal';
-import { ExtendChildren } from '@/types/common';
+import { useModalDispatch, useModalState } from 'recoils/modal';
+import { ExtendChildren } from 'types/common';
 import { MouseEventHandler } from 'react';
 import confirm from './confirm';
 import { LTDialog } from './dialog';

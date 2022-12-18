@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-import { ExtendChildren } from '@/types/common';
+import { ExtendChildren } from 'types/common';
 import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
@@ -14,7 +14,7 @@ export function Portal({ children, selector = '__next' }: Props) {
         setElement(document.getElementById(selector));
     }, []);
 
-    if (!element) {
+    if (element == null) {
         return <></>;
     }
 

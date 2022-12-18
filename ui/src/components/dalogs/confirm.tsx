@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-expressions */
 import { createRoot } from 'react-dom/client';
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
-import { theme } from '@/theme';
+import { theme } from 'theme';
 import { Column, Row } from '../flex';
 import { LTDialog } from './dialog';
 

@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unknown-property */
 /** @jsxImportSource theme-ui */
 
-import { ExtendChildren } from '@/types/common';
+import { ExtendChildren } from 'types/common';
 import { MouseEventHandler, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useUnmount } from '@/hooks/hook-unmount';
+import { useUnmount } from 'hooks/hook-unmount';
 import backdrop from '../backdrop';
 import { Portal } from '../portal';
 

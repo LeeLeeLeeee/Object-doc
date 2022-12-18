@@ -15,13 +15,13 @@ const DISABLED_BUTTON = {
 };
 
 const COLOR = {
-    primary: '#767AE1',
-    secondary: '#E876DD',
+    primary: '#125B50',
+    secondary: '#F6C6EA',
     info: '#8CB7EF',
     muted: '#C7C7C7',
-    danger: '#EC4256',
+    danger: '#FF6363',
     text: '#131314',
-    background: '#fff',
+    background: '#F9F9F9',
     black: '#131314',
 } as const;
 
@@ -70,41 +70,48 @@ export const theme: Theme = {
         sm: {
             color: 'text',
             fontWeight: 'bold',
+            fontFamily: 'body',
             fontSize: 0,
             lineHeight: '17px',
         },
         md: {
             color: 'text',
             fontWeight: 'bold',
+            fontFamily: 'body',
             fontSize: 1,
             lineHeight: '21px',
         },
         ml: {
             color: 'text',
             fontWeight: 'bold',
+            fontFamily: 'body',
             fontSize: 2,
             lineHeight: '23px',
         },
         xml: {
             color: 'text',
             fontWeight: 'bold',
+            fontFamily: 'body',
             fontSize: 3,
             lineHeight: '25px',
         },
         lg: {
             color: 'text',
             fontWeight: 'bold',
+            fontFamily: 'body',
             fontSize: 4,
             lineHeight: '34px',
         },
         xlg: {
             color: 'text',
             fontWeight: 'bold',
+            fontFamily: 'body',
             fontSize: 5,
         },
         xxlg: {
             color: 'text',
             fontWeight: 'bold',
+            fontFamily: 'body',
             fontSize: 6,
         },
     },
@@ -372,6 +379,10 @@ export const theme: Theme = {
     sizes: {
         'max-content': '375px',
     },
+    shadows: [
+        'rgba(0, 0, 0, 0.1) 0px 4px 12px;',
+        'rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;',
+    ],
     breakpoints: ['@media (min-width: 300px) and (max-width: 768px)', '@media (min-width: 769px)'],
     config: {
         useCustomProperties: true,

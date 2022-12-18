@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React, { ComponentType, ReactElement, ReactNode } from 'react';
+import { PATH } from 'const';
+import React from 'react';
 
 export interface ExtendChildren {
     children: React.ReactNode;
@@ -19,6 +20,7 @@ export const ToastType = {
 } as const;
 
 export type ToastGuard = typeof ToastType[keyof typeof ToastType];
+export type PathGuard = keyof typeof PATH;
 
 export interface ToastProps {
     id: string;
@@ -30,4 +32,4 @@ export interface ToastProps {
     executeAfterConfirm?: () => void;
 }
 
-export type ArrayElementType<A> = A extends readonly (infer T)[] ? T : never;
+export type ArrayElementType<A> = A extends ReadonlyArray<infer T> ? T : never;
