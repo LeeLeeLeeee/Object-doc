@@ -1,6 +1,7 @@
 import type { Theme as BaseTheme, ThemeUIStyleObject } from 'theme-ui';
 
 declare module '*.svg';
+
 declare module 'theme-ui' {
     export interface Theme extends BaseTheme {
         letten: Record<string, ThemeUIStyleObject>;

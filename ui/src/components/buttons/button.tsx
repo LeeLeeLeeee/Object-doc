@@ -11,3 +11,5 @@ export const LTButton = React.forwardRef((props: Props, ref: any) => {
     const { $color = 'primary', $variant = 'outlined', ...rest } = props;
     return <Button ref={ref} type="button" variant={`${$color}.${$variant}`} {...rest} />;
 });
+
+LTButton.displayName = 'LTButton';

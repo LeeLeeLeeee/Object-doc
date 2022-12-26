@@ -2,7 +2,7 @@ import { PATH } from 'const';
 import { Path, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import { PathGuard } from 'types/common';
-import { ConditionalWrapper } from './conditional-wrapper';
+import ConditionalWrapper from './conditional-wrapper';
 import { Column } from './flex';
 import { LTText } from './text';
 

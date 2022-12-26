@@ -137,6 +137,7 @@ export const theme: Theme = {
         ...createCustomButtonTheme('secondary'),
         ...createCustomButtonTheme('info'),
         ...createCustomButtonTheme('background'),
+        ...createCustomButtonTheme('danger'),
     },
     forms: {
         checkbox: {
@@ -198,7 +199,7 @@ export const theme: Theme = {
             display: 'flex',
             justifyContent: 'flex-start',
             alignItems: 'center',
-            padding: '20px 16px',
+            padding: '16px 12px',
             borderRadius: '10px',
             borderWidth: '1px',
             borderColor: 'transparent',

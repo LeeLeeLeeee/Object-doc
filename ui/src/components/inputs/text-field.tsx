@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable @typescript-eslint/prefer-nullish-coalescing */
 /* eslint-disable no-unused-vars */
 // import { ClearIcon, ErrorIcon } from 'icons';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -8,13 +7,13 @@ import { Input, InputProps, Label } from 'theme-ui';
 import { Column, Row } from '../flex';
 
 interface Props extends InputProps {
-    value: string;
+    value?: string;
     helpreText?: string;
     errorMessage?: string;
     isError?: boolean;
     asStartIcon?: ReactElement;
     asEndIcon?: ReactElement;
-    onClear(): void;
+    onClear: () => void;
 }
 
 export const LTTextField = React.forwardRef((props: Props, ref: any) => {
@@ -57,3 +56,5 @@ export const LTTextField = React.forwardRef((props: Props, ref: any) => {
         </Column>
     );
 });
+
+LTTextField.displayName = 'LTTextField';
