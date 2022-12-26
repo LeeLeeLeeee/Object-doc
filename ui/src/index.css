@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'sf-pro';
+  src: url('../public/fonts/SFPRODISPLAYMEDIUM.OTF');
+}
+
+@font-face {
+  font-family: 'sf-pro-bold';
+  src: url('../public/fonts/SFPRODISPLAYBOLD.OTF');
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
