@@ -16,7 +16,4 @@ const ConditionalWrapper = (props: Props): ReactElement<any, any> | null => {
     return typeof onWrapFalse === 'function' ? onWrapFalse(children) : (children as ReactElement | null);
 };
 
-export default React.memo(
-    ConditionalWrapper,
-    (prevProps, nextProps) => prevProps.isWrapped === nextProps.isWrapped
-) as typeof ConditionalWrapper;
+export default React.memo(ConditionalWrapper) as typeof ConditionalWrapper;

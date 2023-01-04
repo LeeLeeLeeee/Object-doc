@@ -1,3 +1,4 @@
+/* eslint-disable n/no-callback-literal */
 /* eslint-disable space-before-function-paren */
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-empty-function */

@@ -25,7 +25,7 @@ class SvgComponent extends React.PureComponent<Props, any> {
 
     private handleCreateActorClick() {
         const { instance } = this.props;
-        instance.draw(ShapeType.RECT);
+        instance.draw(ShapeType.ARROW, { text: 'actor' });
     }
 
     render(): ReactNode {

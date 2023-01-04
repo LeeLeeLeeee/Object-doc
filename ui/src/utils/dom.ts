@@ -1,9 +1,9 @@
 import { HorizontalGuard, VerticalGuard } from 'types/common';
 
-type PostionType = {
+interface PostionType {
     vertical: VerticalGuard;
     horizon: HorizontalGuard;
-};
+}
 
 const calculateVertical = (rect: DOMRect, anchorVertical: VerticalGuard, targetVertical: VerticalGuard): number => {
     switch (anchorVertical) {

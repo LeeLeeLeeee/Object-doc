@@ -26,5 +26,5 @@
     "src",
     "index.d.ts",
     ".eslintrc.js"
-  ]
+, "src/services/svg/helpers/.ts"  ]
 }

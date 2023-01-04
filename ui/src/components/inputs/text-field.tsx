@@ -13,7 +13,7 @@ interface Props extends InputProps {
     isError?: boolean;
     asStartIcon?: ReactElement;
     asEndIcon?: ReactElement;
-    onClear: () => void;
+    onClear?: () => void;
 }
 
 export const LTTextField = React.forwardRef((props: Props, ref: any) => {

@@ -22,8 +22,13 @@ const cases = [
 
 function UseCasePage() {
     const [selectedTitle, setSelectedTitle] = useState('시나리오 1');
+
     const handleCaseClick = (title: string) => () => {
         setSelectedTitle(title);
+    };
+
+    const handleSaveClick = (form: any) => {
+        console.log(form);
     };
 
     return (
@@ -63,7 +68,7 @@ function UseCasePage() {
                 ))}
             </Column>
             <Row alignSelf="stretch" sx={{ flex: 1, gap: 1 }}>
-                <UseCaseForm onSave={() => {}} onDelete={() => {}} />
+                <UseCaseForm onSave={handleSaveClick} onDelete={() => {}} />
                 <Column alignSelf="stretch" sx={{ flex: 1 }}>
                     <SvgContainer />
                 </Column>

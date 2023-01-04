@@ -128,7 +128,7 @@ export const theme: Theme = {
             color: 'white',
             fontWeight: 'bold',
             fontSize: 0,
-            py: 5,
+            py: 3,
             '&:disabled': {
                 color: 'muted',
             },
